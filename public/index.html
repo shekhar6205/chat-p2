@@ -12,8 +12,9 @@
       <div class="chatArea">
         <ul class="messages"></ul>
       </div>
-      <input class="inputMessage" placeholder="Type here..."/>
-      <input type="button" class="sendMessage" value="Enter" onClick="sendMessage();socket.emit('stop typing');typing = false;">
+      <div buttonWrap><input class="inputMessage" placeholder="Type here..."/>
+      <input type="button" class="sendMessage" value="Enter" onClick="sendMessage();socket.emit('stop typing');typing = false;"></div>
+      
     </li>
     <li class="login page">
       <div class="form">
