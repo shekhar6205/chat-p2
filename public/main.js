@@ -206,7 +206,14 @@ $(function() {
       }
     }
   });
-
+	$('form#createUsername').submit(function(){
+		setUsername();
+	});
+	$('form#messages').submit(function(){
+		sendMessage();
+        socket.emit('stop typing');
+        typing = false;
+	});
   $inputMessage.on('input', function() {
     updateTyping();
   });

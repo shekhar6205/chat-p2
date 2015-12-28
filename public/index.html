@@ -12,14 +12,20 @@
       <div class="chatArea">
         <ul class="messages"></ul>
       </div>
-      <div buttonWrap><input class="inputMessage" placeholder="Type here..."/>
-      <input type="button" class="sendMessage" value="Enter" onClick="sendMessage();socket.emit('stop typing');typing = false;"></div>
+      <div buttonWrap>
+      <form action="" id="messages">
+      <input class="inputMessage" placeholder="Type here..."/>
+      <input type="button" class="sendMessage" value="Enter" />
+      </form>
+      </div>
       
     </li>
     <li class="login page">
       <div class="form">
         <h3 class="title">Enter your name!</h3>
-        <input class="usernameInput" type="text" maxlength="14" placeholder="type your name" /><input type="button" class="createNickname" value="Enter" onClick="setUsername();">
+        <form action="" id="createUsername">
+        <input class="usernameInput" type="text" maxlength="14" placeholder="type your name" /><input type="button" class="createNickname" value="Enter">
+        </form>
       </div>
     </li>
   </ul>
