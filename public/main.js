@@ -208,11 +208,13 @@ $(function() {
   });
 	$('form#createUsername').submit(function(){
 		setUsername();
+		 return false;
 	});
 	$('form#messages').submit(function(){
 		sendMessage();
         socket.emit('stop typing');
         typing = false;
+		 return false;
 	});
   $inputMessage.on('input', function() {
     updateTyping();
