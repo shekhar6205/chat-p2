@@ -113,7 +113,10 @@ ul {
 }
 
 /* Messages */
-
+input, submit {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
 .chatArea {
   height: 100%;
   padding-bottom: 60px;
