@@ -206,9 +206,15 @@ $(function() {
       }
     }
   });
+	
+  $inputMessage.on('input', function() {
+    updateTyping();
+  });
+
+  // Click events
 	$('form#createUsername').submit(function(){
 		setUsername();
-		 return false;
+		return false;
 	});
 	$('form#messages').submit(function(){
 		sendMessage();
@@ -216,12 +222,6 @@ $(function() {
         typing = false;
 		 return false;
 	});
-  $inputMessage.on('input', function() {
-    updateTyping();
-  });
-
-  // Click events
-
   // Focus input when clicking anywhere on login page
   $loginPage.click(function () {
     $currentInput.focus();
